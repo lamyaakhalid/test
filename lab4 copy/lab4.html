@@ -1,0 +1,30 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h2>plase put your personal information to send your orders</h2>
+<form name="f">
+
+<p>first name: <input TYPE="TEXT" NAME="fname"></p>
+
+<P>last name: <input TYPE="TEXT"  NAME="lname"></P>
+
+<p>email: <input TYPE="TEXT"  NAME="email"></p>
+
+<p>home address: <input TYPE="TEXT"  NAME="address"></p>
+<br>
+
+click "Display the information" to display the information in the form
+<p><input TYPE="BUTTON" VALUE="Display the information" onClick="display();"></p>
+</form>
+<p id="dis"></p>
+
+<script>
+    var dis = document.getElementById('dis');
+function display() {
+dis.innerHTML= document.f.fname.value+"<br>"+document.f.lname.value+"<br>"+document.f.email.value+"<br>"+document.f.address.value;
+}
+</script>
+</body>
+</html>
